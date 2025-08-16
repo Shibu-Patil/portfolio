@@ -6,51 +6,124 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <style type="text/tailwindcss">
+   @theme{
+
+--animate-typing: type 2s steps(10) infinite,blink 0.4s step-end infinite;
+
+@keyframes type {
+   0%{
+    width: 0ch;
+   } 
+   60%{
+    width: 12ch;
+   }
+   100%{
+    width: 0ch;
+   }
+}
+
+@keyframes blink {
+    0%,100%{
+        border-right:transparent;
+    }
+    50%{
+        border-right:3px solid white;
+    }
+}
+}
+    </style>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="h-[100vh]">
     <div class="bg-lime-600 flex size-full" >
-        <div class="h-full w-1/5 bg-black">
-                <div class="w-full h-2/4  py-2 flex flex-col gap-4">
-                    <div class="w-full h-2/5   flex justify-center items-center ">
+        <div class="h-full w-1/5 bg-black flex flex-col ">
+                <div class="w-full h-[300px]  pt-8 flex flex-col gap-4">
+                    <div class="w-full h-2/5   flex justify-center">
                         <img src="./asset/profile.jpeg" alt="profile photo" class="w-[120px] h-[120px] rounded-full border-5 border-[#333]">
                     </div>
                     <div class=" flex justify-center items-center text-white text-xl font-bold">
                     <h1>Shuhbham</h1>
                     </div>
                     <div class="w-full h-1/5 px-2 flex justify-around">
-                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400">
+                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400 transition-all duration-[0.5s]">
                             <a href="" class="size-full flex justify-center items-center">
                             <i class="fa-brands fa-x-twitter text-base"></i>
 
                             </a>
                         </div>
-                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400">
+                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400 transition-all duration-[0.5s]">
                             <a href="" class="size-full flex justify-center items-center">
                                 <i class="fa-brands fa-facebook text-base"></i>
                             </a>
                         </div>
-                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400">
+                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400 transition-all duration-[0.5s]">
                             <a href="" class="size-full flex justify-center items-center">
                                 <i class="fa-brands fa-instagram text-base"></i>
                             </a>
                         </div>
-                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400">
+                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400 transition-all duration-[0.5s]">
                             <a href="" class="size-full flex justify-center items-center">
 
                                 <i class="fa-brands fa-skype text-base"></i>
                             </a>
                         </div>
-                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400">
+                        <div class="w-[40px] h-[40px] rounded-[50%] bg-[#333] flex justify-center items-center text-white hover:bg-blue-400 transition-all duration-[0.5s]">
                             <a href="" class="size-full flex justify-center items-center">
                                 <i class="fa-brands fa-linkedin text-base"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <div class="text-[#a8a9b4] flex flex-col gap-10 justify-center px-6 text-xl">
+                    <div class="flex gap-6 group hover:text-white transition-all duration-[0.5s]">
+                        <span><i class="fa-regular fa-house group-hover:text-blue-400 transition-all duration-[0.5s]"></i></span>
+                        <span>
+                            <a href="">
+                                Home
+                            </a>
+                        </span>
+                    </div>
+                    <div class="flex gap-6 group hover:text-white transition-all duration-[0.5s]">
+                         <span><i class="fa-regular fa-user group-hover:text-blue-400 transition-all duration-[0.5s]"></i></span>
+                        <span>
+                            <a href="">
+                                About
+                            </a>
+                        </span>                       
+                    </div>
+                    <div class="flex gap-6 group hover:text-white transition-all duration-[0.5s]">
+                        <span><i class="fa-regular fa-file group-hover:text-blue-400 transition-all duration-[0.5s]"></i></span>
+                        <span><a href="">
+                            Resume
+                        </a></span>
+                    </div>
+                    <div class="flex gap-6 group hover:text-white transition-all duration-[0.5s]">
+                        <span><i class="fa-solid fa-photo-film group-hover:text-blue-400 transition-all duration-[0.5s]"></i></span>
+                        <span><a href="">Portfolio</a></span>
+                    </div>
+                    <div class="flex gap-6 group hover:text-white transition-all duration-[0.5s]">
+                        <span><i class="fa-solid fa-server group-hover:text-blue-400 transition-all duration-[0.5s]"></i></span>
+                        <span>
+                            <a href="">Service</a>
+                        </span>
+                    </div>
+
+                <div class="flex gap-6 group hover:text-white transition-all duration-[0.5s]">
+                        <span><i class="fa-solid fa-envelope group-hover:text-blue-400 transition-all duration-[0.5s]"></i></span>
+                        <span>
+                            <a href="">Contact</a>
+                        </span>
+                    </div>
+                </div>
         </div>
-        <div class="w-4/5 h-full overflow-y-scroll"></div>
+        <div class="w-4/5 h-full overflow-y-scroll">
+            <div class="w-full h-[100vh] bg-black/50 bg-[url('./bg-image.jpg')] flex justify-center flex-col p-8 gap-4 bg-blend-multiply">
+                <h1 class="font-bold text-white text-6xl">Shubham Patil</h1>
+                <h2 class="font-bold text-white text-2xl flex gap-4">I'm <span class="typing inline-block overflow-hidden border-r-[3px] border-solid border-r-white pr-[10px] decoration-solid decoration-blue-500 decoration-[5px] underline animate-typing">Developer </span></h2>
+            </div>
+
+        </div>
          
     </div>
 </body>
